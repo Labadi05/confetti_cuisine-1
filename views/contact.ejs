@@ -1,0 +1,52 @@
+
+<section class="section narrow">
+
+  <h1 class="page-title">Book a course</h1>
+
+  <p class="lead">
+    Tell us what you'd like to cook and
+    we'll reply within one day.
+  </p>
+
+  <form action="/contact" method="POST" class="contact-form">
+
+    <label for="name">Your name</label>
+    <input
+      type="text"
+      id="name"
+      name="name"
+      required
+    >
+
+    <label for="email">Email</label>
+    <input
+      type="email"
+      id="email"
+      name="email"
+      required
+    >
+
+    <label for="class">Course</label>
+    <select id="class" name="class">
+      <option>Fresh pasta from scratch</option>
+      <option>Weeknight curries</option>
+      <option>Tacos from the ground up</option>
+      <option>Knife skills</option>
+    </select>
+
+    <label for="message">Anything we should know?</label>
+
+    <textarea
+      id="message"
+      name="message"
+      rows="4"
+      placeholder="Allergies, group size, preferred dates"
+    ></textarea>
+
+    <button class="button" type="submit">
+      Send request
+    </button>
+
+  </form>
+
+</section>

@@ -1,0 +1,35 @@
+
+<section class="section">
+
+  <h1 class="page-title">Courses</h1>
+
+  <p class="lead">
+    Every course is limited to eight people,
+    and every ingredient is included.
+  </p>
+
+  <table class="class-table">
+    <thead>
+      <tr>
+        <th>Course</th>
+        <th>Length</th>
+        <th>Price</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% offeredCourses.forEach(course => { %>
+        <tr>
+          <td><%= course.title %></td>
+          <td><%= course.length %></td>
+          <td>$<%= course.cost %></td>
+        </tr>
+      <% }); %>
+    </tbody>
+  </table>
+
+  <a class="button" href="/contact">
+    Book a course
+  </a>
+
+</section>
