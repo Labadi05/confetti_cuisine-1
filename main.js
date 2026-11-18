@@ -1,12 +1,13 @@
 
+
 "use strict";
 
 const express = require("express");
 const layouts = require("express-ejs-layouts");
+const mongoose = require("mongoose");
 
 const homeController = require("./controllers/homeController");
 const errorController = require("./controllers/errorController");
-const { connectToDatabase } = require("./db");
 
 const app = express();
 
@@ -28,7 +29,11 @@ app.use(errorController.internalServerError);
 
 async function startServer() {
   try {
-    await connectToDatabase();
+    await mongoose.connect(
+      "mongodb://127.0.0.1:27017/confetti_cuisine"
+    );
+
+    console.log("Connected to MongoDB with Mongoose!");
 
     app.listen(app.get("port"), () => {
       console.log(
@@ -42,4 +47,3 @@ async function startServer() {
 }
 
 startServer();
-7
