@@ -66,8 +66,8 @@ The project is being enhanced progressively with the following planned features:
 - [x] Create home, courses, and contact pages.
 - [x] Implement contact form submission.
 - [x] Add custom error handling.
-- [ ] Install and configure MongoDB.
-- [ ] Integrate Mongoose.
+- [x] Install and configure MongoDB.
+- [x] Integrate Mongoose.
 - [ ] Create database models.
 - [ ] Add subscriber management.
 - [ ] Implement CRUD functionality.
@@ -80,8 +80,4 @@ The project is being enhanced progressively with the following planned features:
 
 This project is being developed as a practical learning journey through backend web development, applying concepts progressively and documenting improvements through Git commits.
 
-## 📌 Project Status
 
-**In development** 🚧
-
-More features and improvements will be added as development continues.
