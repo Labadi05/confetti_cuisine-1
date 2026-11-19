@@ -1,5 +1,3 @@
-
-
 "use strict";
 
 const express = require("express");
@@ -8,6 +6,7 @@ const mongoose = require("mongoose");
 
 const homeController = require("./controllers/homeController");
 const errorController = require("./controllers/errorController");
+const subscribersController = require("./controllers/subscribersController");
 
 const app = express();
 
@@ -21,8 +20,9 @@ app.use(express.static("public"));
 
 app.get("/", homeController.showHome);
 app.get("/courses", homeController.showCourses);
-app.get("/contact", homeController.showSignUp);
-app.post("/contact", homeController.postedSignUpForm);
+
+app.get("/contact", subscribersController.getSubscriptionPage);
+app.post("/subscribe", subscribersController.saveSubscriber);
 
 app.use(errorController.pageNotFoundError);
 app.use(errorController.internalServerError);
