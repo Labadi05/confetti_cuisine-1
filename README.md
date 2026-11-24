@@ -68,8 +68,8 @@ The project is being enhanced progressively with the following planned features:
 - [x] Add custom error handling.
 - [x] Install and configure MongoDB.
 - [x] Integrate Mongoose.
-- [ ] Create database models.
-- [ ] Add subscriber management.
+- [x]  Create database models.
+- [x]  Add subscriber management.
 - [ ] Implement CRUD functionality.
 - [ ] Add user authentication.
 - [ ] Add validation and security improvements.
@@ -78,6 +78,6 @@ The project is being enhanced progressively with the following planned features:
 
 ## 📚 Learning Journey
 
-This project is being developed as a practical learning journey through backend web development, applying concepts progressively and documenting improvements through Git commits.
+This project is being developed as a practical learning journey through backend web development, applying concepts progressively .
 
 
